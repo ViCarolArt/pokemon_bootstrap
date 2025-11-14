@@ -1,0 +1,55 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  background-color: #000; /* fundo preto */
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* ===== TÍTULO DO INÍCIO ===== */
+.titulo-pika {
+  font-size: 4rem;
+  color: #ffeb3b; /* amarelo Pikachu */
+  text-shadow: 0 0 20px #ff0, 0 0 40px #ff0, 0 0 60px #ff0;
+  animation: raio 1.5s infinite alternate;
+  margin-top: 150px;
+}
+
+/* ===== ANIMAÇÃO DO TÍTULO (RAIOS) ===== */
+@keyframes raio {
+  from {
+    text-shadow: 0 0 10px #ff0, 0 0 30px #ff0;
+  }
+  to {
+    text-shadow: 0 0 60px #fff, 0 0 100px #ff0;
+  }
+}
+
+/* ===== IMAGEM DO PIKACHU ===== */
+.pikachu-img {
+  width: 200px;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+/* ===== ANIMAÇÃO FLUTUANTE ===== */
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ===== AJUSTE SEÇÃO INÍCIO ===== */
+#inicio {
+  background: radial-gradient(circle, #000 60%, #222);
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+
+/* ===== BOTÕES ===== */
+.btn-warning {
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* ===== RODAPÉ ===== */
+footer a {
+  text-decoration: none;
+}
