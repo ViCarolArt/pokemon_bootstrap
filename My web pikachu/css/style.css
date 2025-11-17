@@ -1,0 +1,117 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  background-color: #000; /* fundo preto */
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* ===== TÍTULO DO INÍCIO ===== */
+.titulo-pika {
+  font-size: 4rem;
+  color: #ffeb3b; /* amarelo Pikachu */
+  text-shadow: 0 0 20px #ff0, 0 0 40px #ff0, 0 0 60px #ff0;
+  animation: raio 1.5s infinite alternate;
+  margin-top: 150px;
+}
+
+/* ===== ANIMAÇÃO DO TÍTULO (RAIOS) ===== */
+@keyframes raio {
+  from {
+    text-shadow: 0 0 10px #ff0, 0 0 30px #ff0;
+  }
+  to {
+    text-shadow: 0 0 60px #fff, 0 0 100px #ff0;
+  }
+}
+
+/* ===== IMAGEM DO PIKACHU ===== */
+.pikachu-img {
+  width: 200px;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+/* ===== ANIMAÇÃO FLUTUANTE ===== */
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ===== AJUSTE SEÇÃO INÍCIO ===== */
+#inicio {
+  background: radial-gradient(circle, #000 60%, #222);
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+
+/* ===== BOTÕES ===== */
+.btn-warning {
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* ===== RODAPÉ ===== */
+footer a {
+  text-decoration: none;
+}
+
+/* ===== RODAPÉ POKÉ-NEON ===== */
+footer {
+  background: linear-gradient(180deg, #000 0%, #111 60%, #000 100%);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 2px solid #ffeb3b;
+  box-shadow: 0 -0px 25px #ff0;
+}
+
+/* Texto do footer */
+footer p,
+footer h4,
+footer h5 {
+  color: #ffeb3b;
+  text-shadow: 0 0 10px #ff0;
+}
+
+/* Links do footer */
+footer a {
+  color: #ffeb3b;
+  font-weight: bold;
+  transition: 0.3s;
+  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 15px #fff, 0 0 30px #ff0;
+  transform: scale(1.1);
+}
+
+/* Fotos dos Pokémon no footer */
+footer img {
+  border-radius: 10px;
+  border: 2px solid #ffeb3b;
+  box-shadow: 0 0 15px #ff0;
+  transition: 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px #fff, 0 0 40px #ff0;
+}
+
+/* "Equipe PokéWorld" */
+footer .poketeam {
+  color: #ffd600;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Efeito sutil de brilho no rodapé */
+@keyframes brilho-footer {
+  0% { box-shadow: 0 0 10px #ff0; }
+  50% { box-shadow: 0 0 25px #ff0; }
+  100% { box-shadow: 0 0 10px #ff0; }
+}
+
+footer {
+  animation: brilho-footer 3s infinite alternate;
+}
