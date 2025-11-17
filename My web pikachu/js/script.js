@@ -29,3 +29,4 @@ $("#form-contato").submit(function (event) {
     $(this)[0].reset();
   }
 });
+
